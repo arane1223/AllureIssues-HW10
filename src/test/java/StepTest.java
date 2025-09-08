@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 
 public class StepTest {
 
+    private static final String ISSUES = "Issues";
+
     @Test
     void successfulFindingIssueInRepositoryWithStepsTest(){
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -12,8 +14,6 @@ public class StepTest {
         steps.openMainPage();
         steps.searchRepository(LambdaTest.REPOSITORY);
         steps.goToRepository();
-        steps.shouldSeeIssues("Issues");
+        steps.shouldSeeIssues(ISSUES);
     }
-
-
 }
