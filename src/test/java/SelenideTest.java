@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class SelenideTest {
 
     @Test
-    void successfulFindingIssueInRepositoryWithSelenideTest () {
+    void successfulFindingIssueInRepositoryWithSelenideTest() {
 
         SelenideLogger.addListener("allure", new AllureSelenide());
 

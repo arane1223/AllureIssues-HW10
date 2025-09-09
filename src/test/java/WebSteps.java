@@ -6,12 +6,12 @@ import static com.codeborne.selenide.Selenide.*;
 public class WebSteps {
 
     @Step("Открываем главную страницу")
-    public void openMainPage () {
+    public void openMainPage() {
         open("https://github.com/");
     }
 
     @Step("Ищем репозиторий {repository}")
-    public void searchRepository (String repository) {
+    public void searchRepository(String repository) {
         $(".header-search-button").click();
         $("#query-builder-test").setValue(repository).pressEnter();
     }

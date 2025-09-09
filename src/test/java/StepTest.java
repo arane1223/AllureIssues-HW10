@@ -7,7 +7,7 @@ public class StepTest {
     private static final String ISSUES = "Issues";
 
     @Test
-    void successfulFindingIssueInRepositoryWithStepsTest(){
+    void successfulFindingIssueInRepositoryWithStepsTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         WebSteps steps = new WebSteps();
 

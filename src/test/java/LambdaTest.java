@@ -12,7 +12,7 @@ public class LambdaTest {
     public static final String REPOSITORY = "arane1223/QAGURU-JUnit-HW8";
 
     @Test
-    void successfulFindingIssueInRepositoryWithLambdaTest () {
+    void successfulFindingIssueInRepositoryWithLambdaTest() {
 
         SelenideLogger.addListener("allure", new AllureSelenide());
 
